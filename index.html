@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashborad demo</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="main-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="left-area">
+                <div class="logo">
+                  <img class="img-fluid" src="assets/images/logo.png" alt="" />
+                </div>
+
+                <div class="icons-area">
+                  <ul>
+                    <li>
+                      <a href="javascript:;"
+                        ><i class="fa-regular fa-user"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><i class="fa-solid fa-gear"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="position-relative"
+                        ><i class="fa-solid fa-bell"></i>
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        >
+                          9
+                          <span class="visually-hidden">unread messages</span>
+                        </span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="search-area">
+                  <div class="search-box">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search for ..."
+                    />
+                    <button>
+                      <i class="fa-solid search-icon fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="nav-area">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        ><i class="fa-solid fa-house"></i> Dashborad</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-recycle"></i> Report</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><i class="fa-solid fa-tags"></i> Templates</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"
+                        ><i class="fa-solid fa-user-group"></i> Manage Leads</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">
+                        <i class="fa-solid fa-recycle"></i> Quick compose</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i> Logout</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="right-area">
+                <h1>Dashboard WireFrame</h1>
+
+                <div class="tabs-area">
+                  <div class="tabs-bar">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="pills-overview-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-overview"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-overview"
+                          aria-selected="true"
+                        >
+                          Overview
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-tasks-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-tasks"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-tasks"
+                          aria-selected="false"
+                        >
+                          Tasks <span class="badge text-bg-secondary">7</span>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-documents-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-documents"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-documents"
+                          aria-selected="false"
+                        >
+                          Documents
+                          <span class="badge text-bg-secondary">2</span>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-team-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-team"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-team"
+                          aria-selected="false"
+                        >
+                          Team <span class="badge text-bg-secondary">99+</span>
+                        </button>
+                      </li>
+
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-reports-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-reports"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-reports"
+                          aria-selected="false"
+                        >
+                          Reports
+                        </button>
+                      </li>
+
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-admin-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-admin"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-admin"
+                          aria-selected="false"
+                        >
+                          Admin
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div class="start-end-date-area">
+                      <div class="input-group date" id="start_date">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Start date"
+                          id="date"
+                        />
+                        <span class="input-group-append">
+                          <span class="input-group-text d-block">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                        </span>
+                      </div>
+
+                      <i class="fa-solid fa-arrow-right arrow-icon"></i>
+
+                      <div class="input-group date" id="end_date">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="End date"
+                          id="date"
+                        />
+                        <span class="input-group-append">
+                          <span class="input-group-text d-block">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-overview"
+                      role="tabpanel"
+                      aria-labelledby="pills-overview-tab"
+                      tabindex="0"
+                    >
+                      <div class="cards-area">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Total SMS count</p>
+                                <div class="side-by-side">
+                                  <h4>220,870</h4>
+                                  <span class="badge text-bg-success"
+                                    >+7.5%</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Total Submission</p>
+                                <div class="side-by-side">
+                                  <h4>805,236</h4>
+                                  <span class="badge text-bg-danger"
+                                    >-1.2%</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Active Users</p>
+                                <div class="side-by-side">
+                                  <h4>2.352M</h4>
+                                  <span class="badge text-bg-success"
+                                    >+11%</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Active Users</p>
+                                <div class="side-by-side">
+                                  <h4>2.352M</h4>
+                                  <span class="badge text-bg-success"
+                                    >+11%</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="chat-area">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4>Delivery Status</h4>
+                                <div id="chart"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4>
+                                  Relationship B/W SMS Receipt & Telco
+                                  Submission
+                                </h4>
+                                <div id="chart"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-tasks"
+                      role="tabpanel"
+                      aria-labelledby="pills-tasks-tab"
+                      tabindex="0"
+                    >
+                      Tasks
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-documents"
+                      role="tabpanel"
+                      aria-labelledby="pills-documents-tab"
+                      tabindex="0"
+                    >
+                      Documents
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-team"
+                      role="tabpanel"
+                      aria-labelledby="pills-team-tab"
+                      tabindex="0"
+                    >
+                      Team
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-reports"
+                      role="tabpanel"
+                      aria-labelledby="pills-reports-tab"
+                      tabindex="0"
+                    >
+                      Report
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-admin"
+                      role="tabpanel"
+                      aria-labelledby="pills-admin-tab"
+                      tabindex="0"
+                    >
+                      Admin
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

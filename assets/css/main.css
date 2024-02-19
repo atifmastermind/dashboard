@@ -1,0 +1,232 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark-blue: #28488a;
+  --color-whitesmoke: #f4f4fc;
+  --color-gray: #c1c7cd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header .main-area .left-area {
+  height: 100vh;
+  background-color: var(--color-white);
+  padding: 20px 0;
+}
+header .main-area .left-area .logo {
+  text-align: center;
+}
+header .main-area .left-area .icons-area ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 50%;
+  margin: 20px auto;
+}
+header .main-area .left-area .icons-area ul li {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header .main-area .left-area .icons-area ul li a {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 40px;
+  transition: all 0.5s;
+  color: var(--color-dark-blue);
+}
+header .main-area .left-area .icons-area ul li a:hover {
+  background-color: var(--color-whitesmoke);
+  color: var(--color-gray);
+}
+header .main-area .left-area .search-area .search-box {
+  position: relative;
+}
+header .main-area .left-area .search-area .search-box input {
+  background-color: var(--color-whitesmoke);
+  height: 50px;
+  color: var(--color-gray);
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid var(--color-gray);
+  padding-left: 50px;
+  font-size: 20px;
+  color: var(--color-dark-blue);
+}
+header .main-area .left-area .search-area .search-box input:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid var(--color-dark-blue);
+}
+header .main-area .left-area .search-area .search-box button {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  z-index: 2;
+  font-size: 20px;
+  border: none;
+}
+header .main-area .left-area .nav-area {
+  margin: 20px 0;
+}
+header .main-area .left-area .nav-area ul li {
+  padding: 5px 0;
+}
+header .main-area .left-area .nav-area ul li a {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--color-black);
+  font-weight: 600;
+}
+header .main-area .left-area .nav-area ul li a i {
+  padding-right: 10px;
+}
+header .main-area .left-area .nav-area ul li:hover {
+  background-color: var(--color-whitesmoke);
+}
+header .main-area .right-area {
+  border-left: 1px solid var(--color-gray);
+  height: 100vh;
+  padding: 20px;
+  background-color: var(--color-whitesmoke);
+}
+header .main-area .right-area h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+header .main-area .right-area .tabs-area .tabs-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-dark-blue);
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area .date input {
+  z-index: 1;
+  border-radius: 0;
+  background-color: var(--color-white);
+  border: 0;
+  height: 50px;
+  border-bottom: 1px solid var(--color-gray);
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area .date input:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid var(--color-dark-blue);
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area .date .input-group-append {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  z-index: 2;
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area .date .input-group-append .input-group-text {
+  background-color: transparent;
+  border: none;
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area .date .input-group-append .input-group-text i {
+  color: var(--color-black);
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area .arrow-icon {
+  background-color: var(--color-gray);
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .main-area .right-area .tabs-area .tabs-bar .start-end-date-area .arrow-icon:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+header .main-area .right-area .tabs-area .tabs-bar .nav .nav-link {
+  color: var(--color-black);
+  font-weight: 700;
+  height: 50px;
+}
+header .main-area .right-area .tabs-area .tabs-bar .nav .nav-link.active {
+  background-color: transparent;
+  color: var(--color-dark-blue);
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid var(--color-dark-blue);
+}
+header .main-area .right-area .tabs-area .tab-content .tab-pane .cards-area {
+  margin: 20px 0;
+}
+header .main-area .right-area .tabs-area .tab-content .tab-pane .cards-area .card {
+  border-radius: 0;
+}
+header .main-area .right-area .tabs-area .tab-content .tab-pane .cards-area .card .card-body p {
+  margin: 0;
+  font-size: 20px;
+}
+header .main-area .right-area .tabs-area .tab-content .tab-pane .cards-area .card .card-body .side-by-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main-area .right-area .tabs-area .tab-content .tab-pane .cards-area .card .card-body .side-by-side h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+header .main-area .right-area .tabs-area .tab-content .tab-pane .chat-area .card .card-body h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.datepicker-dropdown {
+  top: 145px !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1699px) {
+  header .main-area .left-area .icons-area ul {
+    width: 80%;
+  }
+  header .main-area .left-area .search-area .search-box input {
+    font-size: 16px;
+  }
+  header .main-area .left-area .nav-area ul li a {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color-black);
+    font-weight: 600;
+  }
+  header .main-area .right-area h1 {
+    font-size: 35px;
+  }
+  header .main-area .right-area .tabs-area .tabs-bar .nav .nav-link {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  header .main-area .right-area .tabs-area .tab-content .tab-pane .cards-area .card .card-body p {
+    font-size: 16px;
+  }
+  header .main-area .right-area .tabs-area .tab-content .tab-pane .cards-area .card .card-body .side-by-side h4 {
+    font-size: 20px;
+  }
+  header .main-area .right-area .tabs-area .tab-content .tab-pane .chat-area .card .card-body h4 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
